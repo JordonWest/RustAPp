@@ -11,7 +11,7 @@ pub fn run(){
     let mut core = Core::new().unwrap();
     let client = Client::new(&core.handle());
 
-    let uri = "http://fin/employees/api/employees?show-inactive=false".parse().unwrap();
+    let uri = "https://mothra-backend.herokuapp.com/bug".parse().unwrap();
     let work =
         client.get(uri).and_then(|res| {
 
